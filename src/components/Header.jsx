@@ -29,7 +29,7 @@ export default function Header() {
             </div>
             <div>
                 <ul className='flex space-x-6 ml-80'>
-                    <li className={`cursor-pointer py-3 text-[#e4d295] text-md font-semibold border-b-border-b-transparent ${matchRoute('/') && 'text-[#ecc84f]'}
+                    <li className={`cursor-pointer py-3 text-[#e4d295] text-md font-semibold border-b-transparent ${matchRoute('/') && 'text-[#ecc84f]'}
                       `} 
                       onClick={()=>navigate('/')}
                       >
@@ -67,19 +67,19 @@ export default function Header() {
             </div>
             <div className='flex space-x-6 '>
                 <div>
-                    <button className='text-white font-semibold bg-green-500 rounded-full px-8 py-2 flex items-center'>
+                    <button className='text-gray-400 font-semibold bg-white rounded-full px-8 py-2 flex items-center hover:bg-gray-300'>
                         <TbBulb className='mr-2' />
                         BuzZ
                     </button>
                 </div>
                 <div >
-                    <button className='text-white font-semibold bg-green-500 rounded-full px-8 py-2 flex items-center'>
+                    <button className='text-white font-semibold bg-green-500 rounded-full px-8 py-2 flex items-center hover:bg-green-700'>
                         <ImWhatsapp className='mr-2'/>
                         WhatsApp Us
                     </button>
                 </div>
                 <div>
-                    <button className='text-white font-semibold bg-green-500 rounded-full px-8 py-2 flex items-center'>
+                    <button className='text-white font-semibold bg-green-500 rounded-full px-8 py-2 flex items-center hover:bg-green-700'>
                         <FiPhone className='mr-2' />
                         Call Us
                     </button>
