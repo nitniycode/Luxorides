@@ -18,7 +18,7 @@ export default function Header() {
 
     
   return (
-    <div className='border-b-2 shadow-sm sticky top-0 z-50 bg-cyan-900 '>
+    <div className='border-b-2 shadow-sm sticky top-0 z-50 bg-[#073b4c] '>
         <header className='flex items-center space-x-4'>
             <div>
                 <img src="https://luxorides.com/assets/images/luxorides-square-logo-only-solid-whitepng-400ppi-13-500x500.webp" 
@@ -29,35 +29,35 @@ export default function Header() {
             </div>
             <div>
                 <ul className='flex space-x-6 ml-80'>
-                    <li className={`cursor-pointer py-3 text-[#e4d295] text-md font-semibold border-b-transparent ${matchRoute('/') && 'text-[#ecc84f]'}
+                    <li className={`cursor-pointer py-3 text-[#e6d9af] text-md font-semibold ${matchRoute('/') && 'hover:text-[#b1a374]'}
                       `} 
                       onClick={()=>navigate('/')}
                       >
                         Home
                     </li>
 
-                    <li className={`cursor-pointer py-3 text-[#e4d295] text-md font-semibold  border-b-transparent ${matchRoute('/explore') && 'text-[#ecc84f]'}
+                    <li className={`cursor-pointer py-3 text-[#e6d9af] text-md font-semibold ${matchRoute('/explore') && 'hover:text-[#b1a374]'}
                       `} 
                       onClick={()=>navigate('/explore')}
                       >
                         Explore
                     </li>
 
-                    <li className={`cursor-pointer py-3 text-[#e4d295] text-md font-semibold  border-b-transparent ${matchRoute('/locations') &&'text-[#ecc84f]'}
+                    <li className={`cursor-pointer py-3 text-[#e6d9af] text-md font-semibold ${matchRoute('/locations') &&'hover:text-[#b1a374]'}
                       `} 
                       onClick={()=>navigate('/locations')}
                       >
                         Locations
                     </li>
 
-                    <li className={`cursor-pointer py-3 text-[#e4d295] text-md font-semibold  border-b-transparent ${matchRoute('/support') && 'text-[#ecc84f]'}
+                    <li className={`cursor-pointer py-3 text-[#e6d9af] text-md font-semibold ${matchRoute('/support') && 'hover:text-[#b1a374]'}
                       `} 
                       onClick={()=>navigate('/support')}
                       >
                         Support
                     </li>
 
-                    <li className={`cursor-pointer py-3 text-[#e4d295] text-sm font-semibold  border-b-transparent ${matchRoute('/more') && 'text-[#ecc84f]'}
+                    <li className={`cursor-pointer py-3 text-[#e6d9af] text-sm font-semibold ${matchRoute('/more') && 'hover:text-[#b1a374]'}
                       `} 
                       onClick={()=>navigate('/more')}
                       >
