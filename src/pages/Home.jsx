@@ -44,20 +44,20 @@ export default function Home() {
                 <p className='text-center mt-48 text-5xl font-light mb-[30px] '>
                       Renting a luxury car in <span className='font-medium'>Agra</span>
                 </p>
-                <p className=' m-auto text-2xl w-[700px] font-extralight'>
-                        Renting a luxury car in a city like Agra (Delhi,NCR) is much of a
-                        hurdle unless you arrive at the right place to the right people. In
+                <p className=' m-auto text-2xl text-center font-extralight'>
+                        Renting a luxury car in a city like Agra (Delhi,NCR) is much of a<br/>
+                        hurdle unless you arrive at the right place to the right people. In<br/>
                         this case, You are at the correct place.
                         <br />
-                        <span className='font-medium'>Luxorides</span> offers you a wide variety of luxury cars like <button className='text-green-500'>Audi</button>,<br/>
-                        <button className='text-green-500'>Mercedes</button>,
-                        <button className='text-green-500'>BMW</button>,
-                        <button className='text-green-500'>Jaguar</button>,
-                        <button className='text-green-500'>Range Rover</button>,
-                        <button className='text-green-500'>Bentley</button>,
-                        <button className='text-green-500'>Porsche</button>,
-                        <button className='text-green-500'>Rolls Royce</button>,<br/>
-                        <button className='text-green-500'>Ferrari</button> and <button className='text-green-500'>Vintage Cars</button> on rent in Delhi NCR.
+                        <span className='font-medium'>Luxorides</span> offers you a wide variety of luxury cars like <button className=' font-normal text-green-500'>Audi</button>,<br/>
+                        <button className=' font-normal text-green-500'>Mercedes</button>,
+                        <button className=' font-normal text-green-500'>BMW</button>,
+                        <button className=' font-normal text-green-500'>Jaguar</button>,
+                        <button className=' font-normal text-green-500'>Range Rover</button>,
+                        <button className=' font-normal text-green-500'>Bentley</button>,
+                        <button className=' font-normal text-green-500'>Porsche</button>,
+                        <button className=' font-normal text-green-500'>Rolls Royce</button>,<br/>
+                        <button className=' font-normal text-green-500'>Ferrari</button> and <button className=' font-normal text-green-500'>Vintage Cars</button> on rent in Delhi NCR.
                 </p>
         </div>
       </div>
@@ -145,8 +145,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='bg-[#073b4c] h-auto text-center'>
-        <div className='flex justify-center space-x-10'>
+      <div className='bg-[#073b4c] text-center '>
+        <div className='flex justify-center space-x-10 '>
           <div>
               <button className='text-[#e6d9af] font-bold mt-10 py-5 hover:text-[#b1a374]'>
                   Dive In
@@ -230,7 +230,7 @@ export default function Home() {
           <button><BsPinterest className='text-gray-400 hover:text-white text-2xl'/></button>
         </div>
 
-        <div>
+        <div className='pb-14'>
             <div className='mt-2 text-white'>
               Services offered by <button className='text-[#b1a374] font-bold'>LUXORIDES</button>
             </div>
@@ -243,7 +243,62 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='bg-black h-48 '>
+      <div className='bg-black h-96 text-center'>
+        <div className='flex justify-center space-x-48 py-14'>
+            <div>
+              <img src="https://luxorides.com/assets/images/luxorides-square-logo-only-solid-whitepng-400ppi-9-500x500.webp" 
+                    alt="luxorides logo"
+                    className='h-28'
+             />
+            </div>
+            <div>
+              <h2 className='text-[#82786e] font-medium text-lg'>
+                  Locations
+              </h2><br/>
+              <button className='text-gray-400 hover:text-gray-600'>Delhi</button><br />
+              <button className='text-gray-400 hover:text-gray-600'>Lucknow</button><br />
+              <button className='text-gray-400 hover:text-gray-600'>Agra</button><br />
+              <button className='text-gray-400 hover:text-gray-600'>Jaipur</button><br />
+            </div>
+            <div>
+              <h2 className='text-[#82786e] font-medium text-lg'>
+                  Delhi NCR
+              </h2><br/>
+              <button className='text-gray-400 hover:text-gray-600'>Gurgaon</button><br />
+              <button className='text-gray-400 hover:text-gray-600'>Faridabad</button><br />
+              <button className='text-gray-400 hover:text-gray-600'>Ghaziabad</button><br />
+              <button className='text-gray-400 hover:text-gray-600'>Noida</button><br />
+            </div>
+            <div>
+              <h2 className='text-[#82786e] font-medium text-lg'>
+                  Contacts
+              </h2><br/>
+              <button className='text-gray-400 hover:text-gray-600'>contact@luxorides.in</button><br />
+              <button className='text-gray-400 hover:text-gray-600 py-5 font-extralight'>+91 9119004208</button><br />
+            </div>
+            
+        </div>
+        <div className='bg-gray-600 h-[1px] mx-44'></div>
+
+        <div className='flex justify-center space-x-96'>
+          <div className='text-left mt-5'>
+            <h2 className='text-white'>Website developed by <button className='text-gray-400 hover:text-gray-600'>Coding Scholar</button></h2>
+
+            <h2 className='text-white'>A Unit of <button className='text-[#b1a374] hover:text-[#d8ccaa]'>Umbrella Room Ventures India Pvt Ltd.</button> formally starsudt ventures</h2>
+
+            <h2 className='text-white'>@ Copyright 2021 - All Rights Reserved</h2>
+
+            
+          </div>
+          <div className='space-x-7 mt-5'>
+            <button><ImFacebook className='text-gray-400 hover:text-blue-500 text-2xl'/></button>
+            <button><BsTwitter className='text-gray-400 hover:text-blue-500 text-2xl'/></button>
+            <button><BsInstagram className='text-gray-400 hover:text-pink-400 text-2xl'/></button>
+            <button><BsYoutube className='text-gray-400 hover:text-red-700 text-2xl'/></button>
+            <button><BsPinterest className='text-gray-400 hover:text-red-700 text-2xl'/></button>            
+          </div>
+        </div>
+
 
       </div>
     </section>

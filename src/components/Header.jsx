@@ -79,7 +79,7 @@ export default function Header() {
                     </button>
                 </div>
                 <div>
-                    <button className='text-white font-semibold bg-green-500 rounded-full px-8 py-2 flex items-center hover:bg-green-700'>
+                    <button className='text-white border-white border-2 font-semibold bg-[#073b4c] rounded-full px-8 py-2 flex items-center hover:bg-white hover:text-black'>
                         <FiPhone className='mr-2' />
                         Call Us
                     </button>
