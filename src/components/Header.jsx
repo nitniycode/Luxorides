@@ -28,7 +28,7 @@ export default function Header() {
                 />
             </div>
             <div>
-                <ul className='flex space-x-6 ml-80'>
+                <ul className='flex space-x-6 ml-72'>
                     <li className={`cursor-pointer py-3 text-[#e6d9af] text-md font-semibold ${matchRoute('/') && 'hover:text-[#b1a374]'}
                       `} 
                       onClick={()=>navigate('/')}
@@ -59,13 +59,13 @@ export default function Header() {
 
                     <li className={`cursor-pointer py-3 text-[#e6d9af] text-sm font-semibold ${matchRoute('/more') && 'hover:text-[#b1a374]'}
                       `} 
-                      onClick={()=>navigate('/more')}
+                      onClick={()=>navigate('/about')}
                       >
-                        More
+                        About Us
                     </li>
                 </ul>
             </div>
-            <div className='flex space-x-6 '>
+            <div className='flex space-x-5'>
                 <div>
                     <button className='text-gray-400 font-semibold bg-white rounded-full px-8 py-2 flex items-center hover:bg-gray-300'>
                         <TbBulb className='mr-2' />
