@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Explore from './pages/Explore'
 import Home from './pages/Home'
 import Location from './pages/Locations'
-import About from './pages/About'
+import More from './pages/More'
 import Support from './pages/Support'
 import Header from "./components/Header";
 
@@ -16,7 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/explore" element={<Explore />} />
           <Route path="/location" element={<Location />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/more" element={<More />} />
           <Route path="/support" element={<Support />} />
         </Routes>
       </Router>

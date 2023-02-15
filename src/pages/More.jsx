@@ -103,7 +103,7 @@ export default function About() {
         </div>
 
         <div className='text-center mt-28'>
-          <h2 className='text-5xl font-light'>24*7 CUSTOMER SUPPORT</h2>
+          <h2 className='text-5xl font-light'>24x7 CUSTOMER SUPPORT</h2>
           <p className='text-2xl font-light mt-5 text-gray-500'>
           We offer 24x7 Customer Support.<br/>
           Go to <button className='text-green-500'> Support</button>.

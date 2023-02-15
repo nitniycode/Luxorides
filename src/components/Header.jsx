@@ -41,6 +41,7 @@ export default function Header() {
                       onClick={()=>navigate('/explore')}
                       >
                         Explore
+                        
                     </li>
 
                     <li className={`cursor-pointer py-3 text-[#e6d9af] text-md font-semibold ${matchRoute('/locations') &&'hover:text-[#b1a374]'}
@@ -59,9 +60,9 @@ export default function Header() {
 
                     <li className={`cursor-pointer py-3 text-[#e6d9af] text-sm font-semibold ${matchRoute('/more') && 'hover:text-[#b1a374]'}
                       `} 
-                      onClick={()=>navigate('/about')}
+                      onClick={()=>navigate('/more')}
                       >
-                        About Us
+                        More
                     </li>
                 </ul>
             </div>

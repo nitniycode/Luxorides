@@ -7,8 +7,11 @@ export default function Explore() {
     <section>
       <div>
         <img src="./garage.jpg" alt="image1"
-        
+        className='relative'
         />
+        <div className='absolute top-[50%] right-[39%]'>
+          <h2 className='text-7xl text-white font-semibold'>Explore <span className='font-thin'>Cars</span></h2>
+        </div>
       </div>
 
       <div>

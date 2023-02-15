@@ -6,25 +6,31 @@ import {MdEmail} from 'react-icons/md'
 export default function Support() {
   return (
     <section>
-        <div className='my-16'>
-            <div className='bg-[#465052] mx-[200px]'>
-                <div className='ml-8 p-10 mt-5 text-left'>
-                    <h2 className='text-7xl font-semibold text-white pb-8'>
-                        Your problem is ours!
-                    </h2>
-                    <p className='text-2xl text-white font-thin'>
-                        We offer you complete personal support regarding our services. You can reach us by<br/>
-                        various means, whether it be a <button className='text-green-500'>Mail</button>, <button className='text-green-500'>Call</button> or through <button className='text-green-500'>WhatsApp</button>.
-                    </p>
-                    <p className='text-2xl text-white font-thin my-9'>
-                        We may already have a solution for your concerns. Visit our <button className='text-green-500'>FAQs</button>Section.
-                    </p>
-                    <p className='text-2xl text-white font-thin mb-14'>
-                        Feel free to reach us out. We are available anytime in 24 hours a day, 7 days a Week.
-                    </p>
+        <div>
+            <img src="./supportoffice.jpg" alt="supportimg" 
+            className='relative'
+            />
+            <div className='my-16 absolute top-36 right-20'>
+                <div className='bg-[#465052] mx-[200px]'>
+                    <div className='ml-8 p-10 mt-5 text-left'>
+                        <h2 className='text-7xl font-semibold text-white pb-8'>
+                            Your problem is ours!
+                        </h2>
+                        <p className='text-2xl text-white font-thin'>
+                            We offer you complete personal support regarding our services. You can reach us by<br/>
+                            various means, whether it be a <button className='text-green-500'>Mail</button>, <button className='text-green-500'>Call</button> or through <button className='text-green-500'>WhatsApp</button>.
+                        </p>
+                        <p className='text-2xl text-white font-thin my-9'>
+                            We may already have a solution for your concerns. Visit our <button className='text-green-500'>FAQs</button>Section.
+                        </p>
+                        <p className='text-2xl text-white font-thin mb-14'>
+                            Feel free to reach us out. We are available anytime in 24 hours a day, 7 days a Week.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
+        
         <div  className='bg-gradient-to-r from-[#232323] to-[#25d366] py-20'>
             <div className='flex justify-center space-x-44'>
                 <div className='py-5'>

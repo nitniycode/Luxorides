@@ -6,11 +6,16 @@ import {BsInstagram, BsYoutube, BsPinterest, BsTwitter} from 'react-icons/bs'
 export default function Home() {
   return (
     <section>
-      <div>
+      <div >
         <img src="./tajmahal.jpg" 
               alt="taj" 
+              className='relative'
         />
-        
+        <div className='absolute top-52 right-44 text-right'>
+          <h2 className='text-7xl text-[#c1c1c1] font-thin'>Rent</h2>
+          <h2 className='text-7xl text-[#c1c1c1] font-semibold'>Luxury Cars</h2>
+          <h2 className='text-7xl text-[#c1c1c1] font-thin'>for <span className='font-semibold'>Agra</span></h2>
+        </div>
       </div>
       <div >
         <p className='text-center mt-24 text-7xl font-light'>
