@@ -3,6 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom'
 import {ImWhatsapp} from 'react-icons/im'
 import {FiPhone} from 'react-icons/fi'
 import {TbBulb} from 'react-icons/tb'
+import {RiArrowDownSFill} from 'react-icons/ri'
 
 
 export default function Header() {
@@ -36,19 +37,19 @@ export default function Header() {
                         Home
                     </li>
 
-                    <li className={`cursor-pointer py-3 text-[#e6d9af] text-md font-semibold ${matchRoute('/explore') && 'hover:text-[#b1a374]'}
+                    <li className={`cursor-pointer py-3 flex text-[#e6d9af] text-md font-semibold ${matchRoute('/explore') && 'hover:text-[#b1a374]'}
                       `} 
                       onClick={()=>navigate('/explore')}
                       >
-                        Explore
+                        Explore<RiArrowDownSFill className=' text-2xl'/>
                         
                     </li>
 
-                    <li className={`cursor-pointer py-3 text-[#e6d9af] text-md font-semibold ${matchRoute('/locations') &&'hover:text-[#b1a374]'}
+                    <li className={`cursor-pointer py-3 flex text-[#e6d9af] text-md font-semibold ${matchRoute('/locations') &&'hover:text-[#b1a374]'}
                       `} 
                       onClick={()=>navigate('/locations')}
                       >
-                        Locations
+                        Locations<RiArrowDownSFill className=' text-2xl'/>
                     </li>
 
                     <li className={`cursor-pointer py-3 text-[#e6d9af] text-md font-semibold ${matchRoute('/support') && 'hover:text-[#b1a374]'}
@@ -58,11 +59,11 @@ export default function Header() {
                         Support
                     </li>
 
-                    <li className={`cursor-pointer py-3 text-[#e6d9af] text-sm font-semibold ${matchRoute('/more') && 'hover:text-[#b1a374]'}
+                    <li className={`cursor-pointer py-3 flex text-[#e6d9af] text-sm font-semibold ${matchRoute('/more') && 'hover:text-[#b1a374]'}
                       `} 
                       onClick={()=>navigate('/more')}
                       >
-                        More
+                        More<RiArrowDownSFill className=' text-2xl'/>
                     </li>
                 </ul>
             </div>
