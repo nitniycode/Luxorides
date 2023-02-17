@@ -188,7 +188,7 @@ export default function About() {
           <h2 className='text-left font-bold mx-20'>
             Not finding what You were<br/> looking for!
           </h2>
-          <button className='m-5 py-3 px-14 text-lg text-white border-2 border-black bg-black rounded-full'>
+          <button className='m-5 py-3 px-14 text-lg text-white border-2 border-black bg-black rounded-full hover:shadow-2xl'>
             Go to Support
           </button>
         </div>

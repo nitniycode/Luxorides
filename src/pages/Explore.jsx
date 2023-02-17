@@ -20,22 +20,22 @@ export default function Explore() {
           Go on, Opt your favourite!
           </h2>
           <div className='flex justify-center mt-6'>
-            <button className='m-4 py-3 px-14 text-lg flex items-center text-white bg-[#b1a374] rounded-full hover:bg-[#6c613c] '>Rent Convertibles</button>
-            <button className='m-4 py-3 px-14 text-lg flex items-center text-white bg-[#b1a374] rounded-full hover:bg-[#6c613c] '>Rent Luxury Sedans</button>
-            <button className='m-4 py-3 px-14 text-lg flex items-center text-white bg-[#b1a374] rounded-full hover:bg-[#6c613c] '>Rent Luxury SUVs</button>
+            <button className='m-4 py-3 px-14 text-lg flex items-center text-white bg-[#b1a374] rounded-full hover:bg-[#6c613c] hover:shadow-2xl'>Rent Convertibles</button>
+            <button className='m-4 py-3 px-14 text-lg flex items-center text-white bg-[#b1a374] rounded-full hover:bg-[#6c613c] hover:shadow-2xl'>Rent Luxury Sedans</button>
+            <button className='m-4 py-3 px-14 text-lg flex items-center text-white bg-[#b1a374] rounded-full hover:bg-[#6c613c] hover:shadow-2xl'>Rent Luxury SUVs</button>
           </div>
           <div className='flex justify-center '>
-            <button className='m-4 py-3 px-14 text-lg flex items-center text-white bg-[#b1a374] rounded-full hover:bg-[#6c613c] '>Rent Premiun Luxury SUVs</button>
-            <button className='m-4 py-3 px-14 text-lg flex items-center text-white bg-[#b1a374] rounded-full hover:bg-[#6c613c] '>Rent Sports/Muscle Cars</button>
+            <button className='m-4 py-3 px-14 text-lg flex items-center text-white bg-[#b1a374] rounded-full hover:bg-[#6c613c] hover:shadow-2xl'>Rent Premiun Luxury SUVs</button>
+            <button className='m-4 py-3 px-14 text-lg flex items-center text-white bg-[#b1a374] rounded-full hover:bg-[#6c613c] hover:shadow-2xl'>Rent Sports/Muscle Cars</button>
           </div>
           <div className='flex justify-center '>
-            <button className='m-4 py-3 px-14 text-lg flex items-center text-white bg-[#b1a374] rounded-full hover:bg-[#6c613c] '>Rent Limousines</button>
-            <button className='m-4 py-3 px-14 text-lg flex items-center text-white bg-[#b1a374] rounded-full hover:bg-[#6c613c] '>Rent High End Luxury Cars</button>
-            <button className='m-4 py-3 px-14 text-lg flex items-center text-white bg-[#b1a374] rounded-full hover:bg-[#6c613c] '>Rent Vintage Cars</button>
+            <button className='m-4 py-3 px-14 text-lg flex items-center text-white bg-[#b1a374] rounded-full hover:bg-[#6c613c] hover:shadow-2xl'>Rent Limousines</button>
+            <button className='m-4 py-3 px-14 text-lg flex items-center text-white bg-[#b1a374] rounded-full hover:bg-[#6c613c] hover:shadow-2xl'>Rent High End Luxury Cars</button>
+            <button className='m-4 py-3 px-14 text-lg flex items-center text-white bg-[#b1a374] rounded-full hover:bg-[#6c613c] hover:shadow-2xl'>Rent Vintage Cars</button>
           </div>
           <div className='flex justify-center '>
-            <button className='m-4 py-3 px-14 text-lg flex items-center text-white bg-slate-700 rounded-full hover:bg-slate-900 '>Browse By Brands</button>
-            <button className='m-4 py-3 px-14 text-lg flex items-center text-white bg-slate-700 rounded-full hover:bg-slate-900 '>Rent Browse At a Glance</button>
+            <button className='m-4 py-3 px-14 text-lg flex items-center text-white bg-slate-700 rounded-full hover:bg-slate-900 hover:shadow-2xl'>Browse By Brands</button>
+            <button className='m-4 py-3 px-14 text-lg flex items-center text-white bg-slate-700 rounded-full hover:bg-slate-900 hover:shadow-2xl'>Rent Browse At a Glance</button>
           </div>
 
           <div className='mt-44 text-center'>
@@ -141,7 +141,7 @@ export default function Explore() {
           <h2 className='text-left font-bold mx-20'>
             Not finding what You were<br/> looking for!
           </h2>
-          <button className='m-5 py-3 px-14 text-lg text-white border-2 border-black bg-black rounded-full'>
+          <button className='m-5 py-3 px-14 text-lg text-white border-2 border-black bg-black rounded-full hover:shadow-2xl'>
             Go to Support
           </button>
         </div>

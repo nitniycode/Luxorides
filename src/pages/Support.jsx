@@ -34,7 +34,7 @@ export default function Support() {
         <div  className='bg-gradient-to-r from-[#232323] to-[#25d366] py-20'>
             <div className='flex justify-center space-x-44'>
                 <div className='py-5'>
-                    <button className='m-4 py-4 px-14 text-lg flex items-center text-white bg-green-500 rounded-full hover:bg-green-600'>
+                    <button className='m-4 py-4 px-14 text-lg flex items-center text-white bg-green-500 rounded-full hover:bg-green-600 hover:shadow-2xl'>
                         <ImWhatsapp className='mr-2'/>
                         WhatsApp Us
                     </button>
@@ -53,7 +53,7 @@ export default function Support() {
         <div  className='bg-gradient-to-r from-[#232323] to-[#e4d295] py-20'>
             <div className='flex justify-center space-x-44'>
                 <div className='py-5'>
-                    <button className='m-4 py-4 px-14 text-lg flex items-center text-black bg-yellow-300 rounded-full hover:bg-yellow-400'>
+                    <button className='m-4 py-4 px-14 text-lg flex items-center text-black bg-yellow-300 rounded-full hover:bg-yellow-400 hover:shadow-2xl'>
                         <MdEmail className='mr-2 text-2xl'/>
                         E-Mail Us
                     </button>
@@ -217,7 +217,7 @@ export default function Support() {
           <h2 className='text-left font-bold mx-20'>
             Not finding what You were<br/> looking for!
           </h2>
-          <button className='m-5 py-3 px-14 text-lg text-white border-2 border-black bg-black rounded-full'>
+          <button className='m-5 py-3 px-14 text-lg text-white border-2 border-black bg-black rounded-full hover:shadow-2xl'>
             Go to Support
           </button>
         </div>

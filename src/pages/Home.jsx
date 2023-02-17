@@ -32,15 +32,15 @@ export default function Home() {
           </p>
         </div>
         <div className='flex justify-center mt-5'>
-          <button className='m-5 py-3 px-14 text-lg text-black border-2 border-black bg-white rounded-full hover:bg-black hover:text-white'>
+          <button className='m-5 py-3 px-14 text-lg text-black border-2 border-black bg-white rounded-full hover:bg-black hover:text-white hover:shadow-2xl'>
             Explore Brands
           </button>
 
-          <button className='m-5 py-3 px-14 text-lg text-black border-2 border-black bg-white rounded-full hover:bg-black hover:text-white'>
+          <button className='m-5 py-3 px-14 text-lg text-black border-2 border-black bg-white rounded-full hover:bg-black hover:text-white hover:shadow-2xl'>
             Explore Cars
           </button>
 
-          <button className='m-5 py-3 px-14 text-lg text-black border-2 border-black bg-white rounded-full hover:bg-black hover:text-white'>
+          <button className='m-5 py-3 px-14 text-lg text-black border-2 border-black bg-white rounded-full hover:bg-black hover:text-white hover:shadow-2xl'>
             Explore Services
           </button>
         </div>
@@ -144,7 +144,7 @@ export default function Home() {
           <h2 className='text-left font-bold mx-20'>
             Not finding what You were<br/> looking for!
           </h2>
-          <button className='m-5 py-3 px-14 text-lg text-white border-2 border-black bg-black rounded-full'>
+          <button className='m-5 py-3 px-14 text-lg text-white border-2 border-black bg-black rounded-full hover:shadow-2xl'>
             Go to Support
           </button>
         </div>

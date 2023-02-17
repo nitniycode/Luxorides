@@ -30,14 +30,14 @@ export default function Header() {
             </div>
             <div>
                 <ul className='flex space-x-6 ml-72'>
-                    <li className={`cursor-pointer py-3 text-[#e6d9af] text-md font-semibold ${matchRoute('/') && 'hover:text-[#b1a374]'}
+                    <li className={`cursor-pointer py-3 text-[#e6d9af] text-md font-semibold border-b-transparent hover:text-[#b1a374] ${matchRoute('/')}
                       `} 
                       onClick={()=>navigate('/')}
                       >
                         Home
                     </li>
 
-                    <li className={`cursor-pointer py-3 flex text-[#e6d9af] text-md font-semibold ${matchRoute('/explore') && 'hover:text-[#b1a374]'}
+                    <li className={`cursor-pointer py-3 flex text-[#e6d9af] text-md font-semibold border-b-transparent hover:text-[#b1a374] ${matchRoute('/explore')}
                       `} 
                       onClick={()=>navigate('/explore')}
                       >
@@ -45,21 +45,21 @@ export default function Header() {
                         
                     </li>
 
-                    <li className={`cursor-pointer py-3 flex text-[#e6d9af] text-md font-semibold ${matchRoute('/locations') &&'hover:text-[#b1a374]'}
+                    <li className={`cursor-pointer py-3 flex text-[#e6d9af] text-md font-semibold border-b-transparent hover:text-[#b1a374] ${matchRoute('/locations')}
                       `} 
                       onClick={()=>navigate('/locations')}
                       >
                         Locations<RiArrowDownSFill className=' text-2xl'/>
                     </li>
 
-                    <li className={`cursor-pointer py-3 text-[#e6d9af] text-md font-semibold ${matchRoute('/support') && 'hover:text-[#b1a374]'}
+                    <li className={`cursor-pointer py-3 text-[#e6d9af] text-md font-semibold border-b-transparent hover:text-[#b1a374] ${matchRoute('/support')}
                       `} 
                       onClick={()=>navigate('/support')}
                       >
                         Support
                     </li>
 
-                    <li className={`cursor-pointer py-3 flex text-[#e6d9af] text-sm font-semibold ${matchRoute('/more') && 'hover:text-[#b1a374]'}
+                    <li className={`cursor-pointer py-3 flex text-[#e6d9af] text-md font-semibold border-b-transparent hover:text-[#b1a374] ${matchRoute('/more')}
                       `} 
                       onClick={()=>navigate('/more')}
                       >
