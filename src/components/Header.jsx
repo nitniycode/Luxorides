@@ -37,11 +37,38 @@ export default function Header() {
                         Home
                     </li>
 
-                    <li className={`cursor-pointer py-3 flex text-[#e6d9af] text-md font-semibold border-b-transparent hover:text-[#b1a374] ${matchRoute('/explore')}
+                    <li className={`group relative cursor-pointer py-3 flex text-[#e6d9af] text-md font-semibold border-b-transparent hover:text-[#b1a374]
                       `} 
-                      onClick={()=>navigate('/explore')}
+                     
                       >
                         Explore<RiArrowDownSFill className=' text-2xl'/>
+
+                        <div className='hidden group-hover:block w-[230px] h-[190px] top-[100%] absolute bg-[#073b4c] text-center'>
+                            <li className={`mt-4 text-[#e6d9af] border-b-transparent hover:text-[#b1a374] ${matchRoute('/ecategoires')}
+                            `}
+                            onClick={()=>navigate('/ecategories')}
+                            >
+                                Explore by Categories
+                            </li>
+                            <li className={`mt-4 text-[#e6d9af] border-b-transparent hover:text-[#b1a374] ${matchRoute('/esevices')}
+                            `}
+                            onClick={()=>navigate('/eservices')}
+                            >
+                                Explore by Services
+                            </li>
+                            <li className={`mt-4 text-[#e6d9af] border-b-transparent hover:text-[#b1a374] ${matchRoute('/ebrands')}
+                            `}
+                            onClick={()=>navigate('/ebrands')}
+                            >
+                                Explore by Brands
+                            </li>
+                            <li className={`mt-4 text-[#e6d9af] border-b-transparent hover:text-[#b1a374] ${matchRoute('/oneview')}
+                            `}
+                            onClick={()=>navigate('/oneview')}
+                            >
+                                Explore in One View
+                            </li>
+                        </div>
                         
                     </li>
 

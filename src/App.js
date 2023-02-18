@@ -1,10 +1,14 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Explore from './pages/Explore'
+import Ecategories from './pages/Ecategories'
 import Home from './pages/Home'
 import Location from './pages/Locations'
 import More from './pages/More'
 import Support from './pages/Support'
+import Eservices from './pages/Eservices'
+import Ebrands from './pages/Ebrands'
+import Oneview from './pages/Oneview'
 import Header from "./components/Header";
+
 
 
 function App() {
@@ -14,10 +18,13 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/explore" element={<Explore />} />
+          <Route path="/ecategories" element={<Ecategories />} />
           <Route path="/location" element={<Location />} />
           <Route path="/more" element={<More />} />
           <Route path="/support" element={<Support />} />
+          <Route path="/eservices" element={<Eservices />} />
+          <Route path="/ebrands" element={<Ebrands />} />
+          <Route path="/oneview" element={<Oneview />} />
         </Routes>
       </Router>
     </>
