@@ -7,6 +7,7 @@ import Support from './pages/Support'
 import Eservices from './pages/Eservices'
 import Ebrands from './pages/Ebrands'
 import Oneview from './pages/Oneview'
+import Signin from "./pages/Signin";
 import Header from "./components/Header";
 
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="/eservices" element={<Eservices />} />
           <Route path="/ebrands" element={<Ebrands />} />
           <Route path="/oneview" element={<Oneview />} />
+          <Route path="/signin" element={<Signin />} />
         </Routes>
       </Router>
     </>

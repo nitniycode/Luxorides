@@ -2,7 +2,7 @@ import React from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import {ImWhatsapp} from 'react-icons/im'
 import {FiPhone} from 'react-icons/fi'
-import {TbBulb} from 'react-icons/tb'
+import {GoSignIn} from 'react-icons/go'
 import {RiArrowDownSFill} from 'react-icons/ri'
 
 
@@ -114,9 +114,9 @@ export default function Header() {
             </div>
             <div className='flex space-x-5'>
                 <div>
-                    <button className='text-gray-400 font-semibold bg-white rounded-full px-8 py-2 flex items-center hover:bg-gray-300'>
-                        <TbBulb className='mr-2' />
-                        BuzZ
+                    <button className='text-white border-white border-2 font-semibold bg-[#073b4c] rounded-full px-8 py-2 flex items-center hover:bg-white hover:text-black'>
+                        <FiPhone className='mr-2' />
+                        Call Us
                     </button>
                 </div>
                 <div >
@@ -126,9 +126,12 @@ export default function Header() {
                     </button>
                 </div>
                 <div>
-                    <button className='text-white border-white border-2 font-semibold bg-[#073b4c] rounded-full px-8 py-2 flex items-center hover:bg-white hover:text-black'>
-                        <FiPhone className='mr-2' />
-                        Call Us
+                    <button className={`text-white border-white border-2 font-semibold bg-[#073b4c] rounded-full px-8 py-2 flex items-center hover:bg-white hover:text-black ${matchRoute('/Signin')}
+                    `}
+                        onClick={()=>navigate('/signin')}
+                    >
+                        <GoSignIn className='mr-2'/>
+                        Sign In
                     </button>
                 </div>
             </div>
