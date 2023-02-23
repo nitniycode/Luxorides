@@ -10,6 +10,7 @@ import Oneview from './pages/Oneview'
 import Signin from "./pages/Signin";
 import Signup from "./pages/Signup";
 import Header from "./components/Header";
+import Forgotpassword from "./pages/Forgotpassword";
 
 
 
@@ -29,6 +30,7 @@ function App() {
           <Route path="/oneview" element={<Oneview />} />
           <Route path="/signin" element={<Signin />} />
           <Route path="/sign-up" element={<Signup />} />
+          <Route path="/forgotpassword" element={<Forgotpassword />} />
         </Routes>
       </Router>
     </>
