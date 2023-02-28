@@ -84,13 +84,22 @@ export default function Header() {
                             >
                                 Delhi
                             </li>
-                            <li className='mt-5 text-[#e6d9af] border-b-transparent hover:text-[#b1a374]'>
+                            <li className={`mt-5 text-[#e6d9af] border-b-transparent hover:text-[#b1a374] ${matchRoute('/Agra')}
+                            `}
+                            onClick={()=>navigate('/Agra')}
+                            >
                                 Agra
                             </li>
-                            <li className='mt-5 text-[#e6d9af] border-b-transparent hover:text-[#b1a374]'>
+                            <li className={`mt-5 text-[#e6d9af] border-b-transparent hover:text-[#b1a374] ${matchRoute('/Jaipur')}
+                            `}
+                            onClick={()=>navigate('/Jaipur')}
+                            >
                                 Jaipur
                             </li>
-                            <li className='mt-5 text-[#e6d9af] border-b-transparent hover:text-[#b1a374]'>
+                            <li className={`mt-5 text-[#e6d9af] border-b-transparent hover:text-[#b1a374] ${matchRoute('/Lucknow')}
+                            `}
+                            onClick={()=>navigate('/Lucknow')}
+                            >
                                 Lucknow
                             </li>
                         </div>

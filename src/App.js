@@ -12,6 +12,9 @@ import Signup from "./pages/Signup";
 import Header from "./components/Header";
 import Forgotpassword from "./pages/Forgotpassword";
 import Delhi from "./pages/Delhi";
+import Agra from "./pages/Agra";
+import Jaipur from "./pages/Jaipur";
+import Lucknow from "./pages/Lucknow";
 
 
 
@@ -33,6 +36,9 @@ function App() {
           <Route path="/sign-up" element={<Signup />} />
           <Route path="/forgotpassword" element={<Forgotpassword />} />
           <Route path="/Delhi" element={<Delhi />} />
+          <Route path="/Agra" element={<Agra />} />
+          <Route path="/jaipur" element={<Jaipur />} />
+          <Route path="/lucknow" element={<Lucknow />} />
         </Routes>
       </Router>
     </>
