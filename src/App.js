@@ -11,6 +11,7 @@ import Signin from "./pages/Signin";
 import Signup from "./pages/Signup";
 import Header from "./components/Header";
 import Forgotpassword from "./pages/Forgotpassword";
+import Delhi from "./pages/Delhi";
 
 
 
@@ -31,6 +32,7 @@ function App() {
           <Route path="/signin" element={<Signin />} />
           <Route path="/sign-up" element={<Signup />} />
           <Route path="/forgotpassword" element={<Forgotpassword />} />
+          <Route path="/Delhi" element={<Delhi />} />
         </Routes>
       </Router>
     </>

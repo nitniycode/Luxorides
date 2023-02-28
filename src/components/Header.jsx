@@ -72,17 +72,16 @@ export default function Header() {
                         
                     </li>
 
-                    <li className={`group relative cursor-pointer py-3 flex text-[#e6d9af] text-md font-semibold border-b-transparent hover:text-[#b1a374] ${matchRoute('/locations')}
-                      `} 
-                      onClick={()=>navigate('/locations')}
+                    <li className={`group relative cursor-pointer py-3 flex text-[#e6d9af] text-md font-semibold border-b-transparent hover:text-[#b1a374]
+                      `}
                       >
                         Locations<RiArrowDownSFill className=' text-2xl'/>
 
-                        <div className='hidden group-hover:block w-[150px] h-[250px] top-[100%] absolute bg-[#073b4c] text-center'>
-                            <li className='mt-5 text-[#e6d9af] border-b-transparent hover:text-[#b1a374]'>
-                                NCR
-                            </li>
-                            <li className='mt-5 text-[#e6d9af] border-b-transparent hover:text-[#b1a374]'>
+                        <div className='hidden group-hover:block w-[130px] h-[200px] top-[100%] absolute bg-[#073b4c] text-center'>
+                            <li className={`mt-5 text-[#e6d9af] border-b-transparent hover:text-[#b1a374] ${matchRoute('/delhi')}
+                            `}
+                            onClick={()=>navigate('/Delhi')}
+                            >
                                 Delhi
                             </li>
                             <li className='mt-5 text-[#e6d9af] border-b-transparent hover:text-[#b1a374]'>
