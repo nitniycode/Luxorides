@@ -19,7 +19,7 @@ export default function Header() {
 
     
   return (
-    <div className='border-b-2 shadow-sm sticky top-0 z-50 bg-[#073b4c] '>
+    <div className='shadow-sm sticky top-0 z-50 bg-[#073b4c] '>
         <header className='flex items-center space-x-4'>
             <div>
                 <img src="https://luxorides.com/assets/images/luxorides-square-logo-only-solid-whitepng-400ppi-13-500x500.webp" 
