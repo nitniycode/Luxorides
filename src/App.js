@@ -15,6 +15,7 @@ import Delhi from "./pages/Delhi";
 import Agra from "./pages/Agra";
 import Jaipur from "./pages/Jaipur";
 import Lucknow from "./pages/Lucknow";
+import Travelclass from "./pages/Travelclass";
 
 
 
@@ -39,6 +40,7 @@ function App() {
           <Route path="/Agra" element={<Agra />} />
           <Route path="/jaipur" element={<Jaipur />} />
           <Route path="/lucknow" element={<Lucknow />} />
+          <Route path="/travelclass" element={<Travelclass />} />
         </Routes>
       </Router>
     </>

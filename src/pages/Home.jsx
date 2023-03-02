@@ -269,6 +269,30 @@ export default function Home() {
           </div>
       </div>
 
+      <div className='bg-[#ccf5f4]'>
+        <div className='flex justify-center pt-32 space-x-16'>
+          <div>
+            <img src="./cargirl1.jpg" alt="windowgirl" 
+            className={`w-[750px] cursor-pointer rounded-3xl ${matchRoute('/travelclass')}
+            `}
+            onClick={()=>navigate('/travelclass')}
+            />
+          </div>
+          <div className='text-center'>
+            <h2 className='text-6xl'>RIDE</h2>
+            <h2 className='text-7xl font-semibold'>ELITE</h2>
+            <p className='text-3xl font-light mt-5'>Luxorides is the finest<br/> luxury car rental service in<br/> Delhi NCR, Jaipur, Agra<br/> and Lucknow.<br/>
+            We offer you a seamless<br/> chauffeur driven ride<br/> experience to light up<br/> your event. </p>
+          </div>
+        </div>
+        <p className={`text-2xl text-center mt-12 pb-16 font-semibold text-red-500 cursor-pointer underline underline-offset-8 ${matchRoute('/travelclass')}
+        `}
+        onClick={()=>navigate('/travelclass')}
+        >
+          Luxorides Luxury Car Rentals for Corporate Delhi Noida Gurgaon Ghaziabad
+        </p>
+      </div>
+
       <div className='bg-[#b2ccd2] h-auto py-24 '>
         <div className='justify-center flex  text-5xl'>
           <h2 className='text-left font-bold mx-20'>
