@@ -285,7 +285,7 @@ export default function Home() {
             We offer you a seamless<br/> chauffeur driven ride<br/> experience to light up<br/> your event. </p>
           </div>
         </div>
-        <p className={`text-2xl text-center mt-12 pb-16 font-semibold text-red-500 cursor-pointer underline underline-offset-8 ${matchRoute('/travelclass')}
+        <p className={`text-2xl text-center mt-12 pb-16 font-semibold text-gray-400 cursor-pointer underline underline-offset-8 hover:text-black ${matchRoute('/travelclass')}
         `}
         onClick={()=>navigate('/travelclass')}
         >
