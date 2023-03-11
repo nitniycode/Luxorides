@@ -1,12 +1,17 @@
 import React from 'react'
-import { Link, useLocation, useNavigate } from 'react-router-dom'
+import {SlMagicWand} from 'react-icons/sl'
+import {GiClick} from 'react-icons/gi'
+import {TbBulb} from 'react-icons/tb'
+import { Link } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import {ImFacebook} from 'react-icons/im'
 import {BsInstagram, BsYoutube, BsPinterest, BsTwitter} from 'react-icons/bs'
 
 
-export default function Home() {
+export default function Weddingcar() {
 
-  const location = useLocation()
+    
+    const location = useLocation()
     const navigate = useNavigate()
 
     function matchRoute(route){
@@ -16,190 +21,117 @@ export default function Home() {
     }
   return (
     <section>
-      <div >
-        <img src="./home.jpg" 
-              alt="home" 
-              className='relative'
-        />
-        <div className='absolute top-[75%] right-44'>
-          <h2 className='text-6xl text-white font-thin'>Your <span className='font-semibold'>Luxury Car Rental</span> options Just got better.</h2>
-        </div>
-      </div>
+        <div>
+            <img src="./wedcar.jpg" alt="" 
+            className='relative'/>
 
-      <div>
-        <img src="https://www.luxorides.com/assets/images/1970468.webp" 
-              alt="clrimg" 
-              className='relative'
-        />
-        <div className='absolute top-[140%] left-72 text-center'>
-          <h2 className='text-7xl text-black font-semibold'>Luxury<span className='font-thin'> Car on Rent</span></h2>
-          <h2 className='text-6xl text-black font-thin mt-3'>Luxury is Contagious! Choose <span className='font-semibold'>Wisely</span></h2>
-
-          <div className='flex space-x-7 justify-center mt-8'>
-            <button className={`m-4 py-3 px-14 text-lg flex items-center text-white bg-[#b1a374] rounded-full hover:bg-[#6c613c] hover:shadow-2xl ${matchRoute('/ecategories')}
-            `}
-            onClick={()=>navigate('/ecategories')}
-            >
-              Explore Cars by Category
-            </button>
-            <button className={`m-4 py-3 px-14 text-lg flex items-center text-white bg-[#b1a374] rounded-full hover:bg-[#6c613c] hover:shadow-2xl ${matchRoute('/ebrands')}
-            `}
-            onClick={()=>navigate('/ebrands')}
-            >
-              Explore cars by Brands
-            </button>
-          </div>
-
-          <div className='flex justify-between'>
-            <button className={`m-4 py-3 px-14 text-lg flex items-center border-2 border-[#b1a374] text-[#b1a374] bg-white rounded-full hover:bg-[#b1a374] hover:text-white hover:shadow-2xl ${matchRoute('/oneview')}
-            `}
-            onClick={()=>navigate('/oneview')}
-            >
-              Oneview of the Fleet
-            </button>
-            <button className={`m-4 py-3 px-14 text-lg flex items-center border-2 border-[#b1a374] text-[#b1a374] bg-white rounded-full hover:bg-[#b1a374] hover:text-white hover:shadow-2xl ${matchRoute('/esevices')}
-            `}
-            onClick={()=>navigate('/eservices')}
-            >
-              Explore by Services
-            </button>
-
-          </div>
-        </div>
-      </div>
-
-
-      <div className='bg-[#ccf5f4] pb-24'>
-        <h2 className='text-5xl font-light text-center pt-24'>We're <span className='font-semibold'>Covid-19 Ready</span></h2>
-        <p className='text-2xl font-thin mt-10 text-center'>
-          In an attempt to serve you even better through this pandemic,<br/>
-          We are taking frequent precautionary actions to keep you <span className='font-semibold'>Safe and Sanitised</span>.<br/>
-          Luxorides is a Covid-19 ready car rental service in Delhi NCR.
-        </p>
-
-        <div className='flex justify-center space-x-6 mt-24'>
-          <div className='text-center shadow-2xl'>
-            <img src="https://www.luxorides.com/assets/images/luxorides-covid-precautions-9.webp"
-            alt='covid' className={`w-[350px] cursor-pointer ${matchRoute('/covid')}`} onClick={()=>navigate('/covid')}/>
-            <h2 className='text-lg font-semibold mt-5 '>Regularly Cleaned and Sanitised</h2>
-            <p className='text-lg text-gray-600 mt-3 pb-8'>All our vehicles are regularly cleaned<br/> and sanitised for your safer and<br/> hygienic ride.</p>
-          </div>
-          <div className='text-center shadow-2xl'>
-            <img src="https://www.luxorides.com/assets/images/luxorides-covid-precautions-10.webp"
-            alt='covid' className={`w-[350px] cursor-pointer ${matchRoute('/covid')}`} onClick={()=>navigate('/covid')}/>
-            <h2 className='text-lg font-semibold mt-5'>Minimal / No Touch Policy</h2>
-            <p className='text-lg text-gray-600 mt-3 pb-8'>We follow a minimum / no touch<br/> policy to ensure that you are safe<br/> throughout your rental.</p>
-          </div>
-          <div className='text-center shadow-2xl'>
-            <img src="https://www.luxorides.com/assets/images/6vh99bihqa-1.webp"
-            alt='covid' className={`w-[350px] cursor-pointer ${matchRoute('/covid')}`} onClick={()=>navigate('/covid')}/>
-            <h2 className='text-lg font-semibold mt-5'>Precautionary Tests</h2>
-            <p className='text-lg text-gray-600 mt-3 pb-8'>Our staff undergoes a regular<br/> precautionary thermal screening for<br/> better safety.</p>
-          </div>
-        </div>
-      </div>
-
-      <div className=''>
-        <h2 className='text-6xl font-thin text-center mt-14'>What we Offer</h2>
-        <p className='text-2xl font-light mt-5 text-center'>
-          We cater to all your luxury car rental needs, Be it for any Service or Brand.<br/>
-          Explore what best suits you.
-        </p>
-
-        <div className='flex justify-center space-x-4 mt-16 text-center'>
-          <div className='shadow-2xl px-4 py-4 rounded-3xl'>
-            <div className='hover:shadow-2xl rounded-2xl pb-2'>
-              <Link to="/weddingcar">
-              <img src="https://luxorides.com/assets/images/iqfm79m4en.webp" 
-              alt="wedpic" className='w-[260px] rounded-3xl cursor-pointer'/>
-              </Link>
-              <h2 className='font-light text-lg py-8'>Cars for <span className='font-semibold'>Wedding</span></h2>
+            <div className='absolute top-[40%] right-[5%] text-right'>
+                <h2 className='text-7xl font-semibold text-gray-300'>Wedding Cars</h2>
+                <h2 className='text-5xl font-thin text-gray-300 mt-9'>
+                    Beautiful, Stylish,<br/>
+                    and Classy options<br/>
+                    for your Wedding entrance.
+                </h2>
             </div>
-          </div>
-          
-          <div className='shadow-2xl px-4 py-4 rounded-3xl'>
-            <div className='hover:shadow-2xl rounded-2xl pb-2'>
-              <img src="https://luxorides.com/assets/images/siqkynexsm-copy-1.webp" 
-              alt="corporatepic" className='w-[260px] rounded-3xl'/>
-              <h2 className='font-light text-lg py-8'>Cars for <span className='font-semibold'>Corporate</span></h2>
+        </div>
+
+        <div className='flex justify-center space-x-14 mt-20 text-center'>
+            <div>
+                <SlMagicWand className='text-8xl text-[#149dcc] mx-auto'/>
+                <h2 className='text-3xl my-6'>
+                    HIGHLY MAINTAINED CARS
+                </h2>
+                <p className='text-md text-gray-500'>
+                    Luxorides offers you the best luxury wedding<br/> 
+                    transportation service in Delhi. Our Vehicles<br/> 
+                    are highly maintained through a thorough<br/> 
+                    inspection after every ride, We assure the<br/> 
+                    quality for the next ride being a step ahead.
+                </p>
             </div>
-          </div>
-          
-          <div className='shadow-2xl px-4 py-4 rounded-3xl'>
-            <div className='hover:shadow-2xl rounded-2xl pb-2'>
-              <img src="https://luxorides.com/assets/images/6c7tmrpzwd.webp" 
-              alt="personalpic" className='w-[260px] rounded-3xl'/>
-              <h2 className='font-light text-lg py-8'><span className='font-semibold'>Personal</span> travel</h2>
+            <div>
+                <GiClick className='text-8xl text-[#149dcc] mx-auto'/>
+                <h2 className='text-3xl my-6'>
+                    MORE CHOICES
+                </h2>
+                <p className='text-md text-gray-500'>
+                    Luxorides helps you choose the best<br/> 
+                    available chauffeur driven luxury car for your<br/> 
+                    wedding day.<br/>
+                    Make your wedding day grand and amaze<br/> 
+                    everyone with a WOW!
+                </p>
             </div>
-          </div>
-          
-          <div className='shadow-2xl px-4 py-4 rounded-3xl'>
-            <button className={`hover:shadow-2xl rounded-2xl pb-2 ${matchRoute('/esevices')}
-            `}
-            onClick={()=>navigate('/eservices')}
-            >
-              <img src="https://luxorides.com/assets/images/dqtratkvyb.webp" 
-              alt="explorepic" className='w-[260px] rounded-3xl'/>
-              <h2 className='font-semibold text-lg py-8'>Explore all Services</h2>
-            </button>
-          </div>
+            <div>
+                <TbBulb className='text-8xl text-[#149dcc] mx-auto'/>
+                <h2 className='text-3xl my-6'>
+                    CLASSY DECORATION
+                </h2>
+                <p className='text-md text-gray-500'>
+                We decorate your car with a touch of love.<br/>
+                <br/>
+
+                The decor thats classy as you and is<br/> 
+                personally inspected for quality and<br/> aesthetics that steal every heart.
+                </p>
+            </div>
         </div>
 
-        <div className='flex justify-center mt-28 text-center space-x-7'>
-          <button className={`shadow-2xl  ${matchRoute('/audi')}`} onClick={()=>navigate('/audi')}>
-            <img src="https://luxorides.com/assets/images/audi-logo-for-luxorides-1x1.webp" 
-            alt="audiimg" className='w-[250px]'/>
-            <h2 className='font-light my-3'>Rent an <span className='font-semibold'>Audi</span></h2>
-          </button>
-
-          <button className='shadow-2xl'>
-            <img src="https://luxorides.com/assets/images/bmw-logo-for-luxorides-512px-1x1.webp" 
-            alt="bmwimg" className='w-[250px]'/>
-            <h2 className='font-light my-3'>Rent an <span className='font-semibold'>BMW</span></h2>
-          </button>
-
-          <button className={`shadow-2xl  ${matchRoute('/mercedes')}`} onClick={()=>navigate('/mercedes')}>
-            <img src="https://luxorides.com/assets/images/mercedes-logo-for-luxorides-512px-1x1.webp" 
-            alt="benzimg" className='w-[250px]'/>
-            <h2 className='font-light my-3'>Rent an <span className='font-semibold'>Mercedes</span></h2>
-          </button>
-
-          <button className={`shadow-2xl ${matchRoute('/ebrands')}
-          `}
-          onClick={()=>navigate('/ebrands')}
-          >
-            <img src="https://luxorides.com/assets/images/luxorides-square-logo-only-solid-whitepng-400ppi-6-500x500.webp" 
-            alt="luxologo" className='w-[250px]'/>
-            <h2 className='font-semibold my-3'>Explore all Brands</h2>
-          </button>
+        <div className='flex justify-center space-x-9 mt-32'>
+            <Link to="/ecategories">
+                <button className='py-3 px-14 text-lg flex items-center text-black bg-white border-2 border-black rounded-full hover:bg-black hover:text-white hover:shadow-2xl'>Explore Cars</button>
+            </Link>
+            <Link to="">
+                <button className='py-3 px-14 text-lg flex items-center text-[#7a6e45] bg-white border-2 border-[#7a6e45] rounded-full hover:bg-[#7a6e45] hover:text-white hover:shadow-2xl'>Vintage Collection</button>
+            </Link>
+            <Link to="/ebrands">
+                <button className='py-3 px-14 text-lg flex items-center text-black bg-white border-2 border-black rounded-full hover:bg-black hover:text-white hover:shadow-2xl'>Explore Brands</button>
+            </Link>
         </div>
 
-        <h2 className='text-6xl font-extralight text-center mt-44'>Why Choose Us</h2>
-        <p className='text-2xl mt-7 text-center text-gray-500'>We know making a choice is tough but We will give you enough reasons to keep choosing us!</p>
-
-
-        <div className='flex justify-center text-center mt-10 space-x-10'>
-          <div>
-            <h2 className='text-6xl text-gray-400'>01.</h2>
-            <h2 className='text-lg mt-3'>We are <span className='font-semibold'>trustworthy</span></h2>
-            <p className='text-lg text-gray-500 font-light mt-2'>Luxorides is trusted by countless corporates<br/> and Individuals across the NCR as their<br/> preferred luxury ride partner.</p>
-          </div>
-
-          <div>
-            <h2 className='text-6xl text-gray-400'>02.</h2>
-            <h2 className='text-lg mt-3'>We are <span className='font-semibold'>Always Improving</span></h2>
-            <p className='text-lg text-gray-500 font-light mt-2'>We take our customers seriously, We<br/> understand the your concerns and that's why<br/> we leave no room for any negative surprise.</p>
-          </div>
-
-          <div>
-            <h2 className='text-6xl text-gray-400'>03.</h2>
-            <h2 className='text-lg mt-3'>We are <span className='font-semibold'>Passionate</span></h2>
-            <p className='text-lg text-gray-500 font-light mt-2'>We love what we do and that encourages us<br/> to keep things loving. </p>
-          </div>
+        <div className='flex justify-center space-x-9 mt-5 mb-32'>
+            <Link to="">
+                <button className='py-3 px-14 text-lg flex items-center text-black bg-white border-2 border-black rounded-full hover:bg-black hover:text-white hover:shadow-2xl'>Contact Us</button>
+            </Link>
+            <Link to="/more">
+                <button className='py-3 px-14 text-lg flex items-center text-black bg-white border-2 border-black rounded-full hover:bg-black hover:text-white hover:shadow-2xl'>About Us</button>
+            </Link>
         </div>
-      </div>
 
-      <div className=' mt-16  text-center'>
+        <div>
+            <img src="./weddec.jpg" alt="" 
+            className='relative'/>
+
+            <div className='absolute top-[230%] right-[2%] text-right'>
+                <h2 className='text-7xl font-semibold text-white'>Car Decoration Ideas</h2>
+                <Link to="/decoration">
+                    <button className='py-3 px-14 text-lg flex mt-10 text-white bg-transparent border-2 border-white rounded-full hover:bg-black hover:text-white hover:border-black hover:shadow-2xl'>Go to Decorations</button>
+                </Link>
+            </div>
+        </div>
+
+        <div className='text-center mt-12'>
+            <h2 className='text-6xl font-extralight '>
+                Renting a luxury car for your<br/> wedding
+            </h2>
+            <p className='text-md mt-6 '>
+                Weddings in India are celebrated with much fervour and opulence to create an event that is not<br/> only memorable for the couple getting married but all of their loved ones. If you are looking for a<br/> luxury transportation company in delhi NCR that can help you make a lasting impression through<br/> your bridal or groom's entry, then your search can end right here.
+            </p>
+            <p className='text-md mt-6'>
+                <span className='font-semibold'>We got you covered.</span><br/>
+                Luxorides offers luxury car renting services and vintage vehicles for hire for your wedding<br/> transportation needs. Luxorides assures the quality with highly maintained and aesthtically<br/> decorated vehicles. Each car is thoroughly inspected so that you dont get any unpleasant last<br/> minute surprises. Explore our wide range of vehicles, We also offer custom options if you wish to<br/> raise the bar of luxury. 
+            </p>
+
+            <h2 className='text-6xl mt-32 font-extralight'>For the<br/> <span className='font-semibold'>Big Fat Indian Weddings</span></h2>
+            <p className='text-2xl font-extralight text-gray-500 mt-5'>
+                Luxury and Vintage cars can add a unique value to your big fat<br/> 
+                Indian wedding. Weddings in india are not only celebrated as the<br/> 
+                bonding of two souls but also as a once in a lifetime festival.<br/>
+                Lets make that celebration more memorable.
+            </p>
+        </div>
+
+        <div className='bg-[#efefef] mt-16  text-center'>
               <p className='text-center  pt-20 text-5xl font-light'>
                   How it Works
               </p>
@@ -269,30 +201,6 @@ export default function Home() {
                   </p>
               </div>
           </div>
-      </div>
-
-      <div className='bg-[#ccf5f4]'>
-        <div className='flex justify-center pt-32 space-x-16'>
-          <div>
-            <img src="./cargirl1.jpg" alt="windowgirl" 
-            className={`w-[750px] cursor-pointer rounded-3xl ${matchRoute('/travelclass')}
-            `}
-            onClick={()=>navigate('/travelclass')}
-            />
-          </div>
-          <div className='text-center'>
-            <h2 className='text-6xl'>RIDE</h2>
-            <h2 className='text-7xl font-semibold'>ELITE</h2>
-            <p className='text-3xl font-light mt-5'>Luxorides is the finest<br/> luxury car rental service in<br/> Delhi NCR, Jaipur, Agra<br/> and Lucknow.<br/>
-            We offer you a seamless<br/> chauffeur driven ride<br/> experience to light up<br/> your event. </p>
-          </div>
-        </div>
-        <p className={`text-2xl text-center mt-12 pb-16 font-semibold text-gray-400 cursor-pointer underline underline-offset-8 hover:text-black ${matchRoute('/travelclass')}
-        `}
-        onClick={()=>navigate('/travelclass')}
-        >
-          Luxorides Luxury Car Rentals for Corporate Delhi Noida Gurgaon Ghaziabad
-        </p>
       </div>
 
       <div className='bg-[#b2ccd2] h-auto py-24 '>
@@ -485,8 +393,6 @@ export default function Home() {
 
 
       </div>
-
-      
     </section>
   )
 }

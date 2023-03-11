@@ -17,6 +17,10 @@ import Jaipur from "./pages/Jaipur";
 import Lucknow from "./pages/Lucknow";
 import Travelclass from "./pages/Travelclass";
 import Covid from "./pages/Covid";
+import Audi from "./pages/Audi";
+import Weddingcar from "./pages/Weddingcar";
+import Decoration from "./pages/Decoration";
+import Mercedes from "./pages/Mercedes";
 
 
 
@@ -43,6 +47,10 @@ function App() {
           <Route path="/lucknow" element={<Lucknow />} />
           <Route path="/travelclass" element={<Travelclass />} />
           <Route path="/covid" element={<Covid />} />
+          <Route path="/audi" element={<Audi />} />
+          <Route path="/weddingcar" element={<Weddingcar />} />
+          <Route path="/decoration" element={<Decoration />} />
+          <Route path="/mercedes" element={<Mercedes />} />
         </Routes>
       </Router>
     </>
