@@ -112,11 +112,23 @@ export default function Header() {
                         Support
                     </li>
 
-                    <li className={`cursor-pointer py-3 flex text-[#e6d9af] text-md font-semibold border-b-transparent hover:text-[#b1a374] ${matchRoute('/more')}
-                      `} 
-                      onClick={()=>navigate('/more')}
-                      >
+                    <li className={`group relative cursor-pointer py-3 flex text-[#e6d9af] text-md font-semibold border-b-transparent hover:text-[#b1a374]`}>
                         More<RiArrowDownSFill className=' text-2xl'/>
+
+                        <div className='hidden group-hover:block w-[130px] h-[140px] top-[100%] absolute bg-[#073b4c] text-center'>
+                            <li className={`mt-4 text-[#e6d9af] border-b-transparent hover:text-[#b1a374] ${matchRoute('')}
+                            `}
+                            onClick={()=>navigate('')}
+                            >
+                                Contact Us
+                            </li>
+                            <li className={`mt-4 text-[#e6d9af] border-b-transparent hover:text-[#b1a374] ${matchRoute('/about')}
+                            `}
+                            onClick={()=>navigate('/about')}
+                            >
+                                About Us
+                            </li>
+                        </div>
                     </li>
                 </ul>
             </div>

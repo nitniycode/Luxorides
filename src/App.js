@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Ecategories from './pages/Ecategories'
 import Home from './pages/Home'
 import Location from './pages/Locations'
-import More from './pages/More'
 import Support from './pages/Support'
 import Eservices from './pages/Eservices'
 import Ebrands from './pages/Ebrands'
@@ -21,6 +20,8 @@ import Audi from "./pages/Audi";
 import Weddingcar from "./pages/Weddingcar";
 import Decoration from "./pages/Decoration";
 import Mercedes from "./pages/Mercedes";
+import About from "./pages/About";
+import Corporate from "./pages/Corporate";
 
 
 
@@ -33,7 +34,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/ecategories" element={<Ecategories />} />
           <Route path="/location" element={<Location />} />
-          <Route path="/more" element={<More />} />
+          <Route path="/about" element={<About />} />
           <Route path="/support" element={<Support />} />
           <Route path="/eservices" element={<Eservices />} />
           <Route path="/ebrands" element={<Ebrands />} />
@@ -51,6 +52,7 @@ function App() {
           <Route path="/weddingcar" element={<Weddingcar />} />
           <Route path="/decoration" element={<Decoration />} />
           <Route path="/mercedes" element={<Mercedes />} />
+          <Route path="/corporate" element={<Corporate />} />
         </Routes>
       </Router>
     </>
