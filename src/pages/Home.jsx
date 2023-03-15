@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import {ImFacebook} from 'react-icons/im'
-import {BsInstagram, BsYoutube, BsPinterest, BsTwitter} from 'react-icons/bs'
+import {BsInstagram, BsYoutube, BsPinterest, BsTwitter, BsChevronLeft, BsChevronRight } from 'react-icons/bs'
+
 
 
 export default function Home() {
@@ -14,16 +15,42 @@ export default function Home() {
             return true
         }
     }
+
+    const slides=[
+      {url:'./home.jpg'},
+      {url:'./merc.jpg'},
+      {url:'./cargirl.jpg'},
+      {url:'./sign3.jpg'},
+      {url:'./wedcar.jpg'},
+    ]
+    const [Currentstate, setCurrentState]= useState(0)
+
+    const prevslide=()=>{
+      const isfirstdlide = Currentstate===0;
+      const newindex = isfirstdlide ? slides.length-1: Currentstate-1;
+      setCurrentState(newindex);
+      
+    };
+      const nextslide=()=>{
+        const isfirstdlide = Currentstate=== slides.length-1;
+        const newindex= isfirstdlide ? 0: Currentstate+1;
+        setCurrentState(newindex)
+      };
+
+
   return (
     <section>
-      <div >
-        <img src="./home.jpg" 
-              alt="home" 
-              className='relative'
-        />
-        <div className='absolute top-[75%] right-44'>
-          <h2 className='text-6xl text-white font-thin'>Your <span className='font-semibold'>Luxury Car Rental</span> options Just got better.</h2>
-        </div>
+      <div className='w-full h-[700px] relative'>
+        <div style={{backgroundImage: `url(${slides[Currentstate].url})`}}
+        className='w-full h-full bg-center bg-cover duration-100'></div>
+      </div>
+
+      <div className='absolute top-[50%] translate-y-[-50%] left-5 p-4 text-white bg-transparents cursor-pointer'>
+        <BsChevronLeft onClick={prevslide} size={40}/>
+      </div>
+
+      <div className='absolute top-[50%] translate-y-[-50%] right-5 p-4 text-white bg-transparent cursor-pointer'>
+        <BsChevronRight onClick={nextslide} size={40}/>
       </div>
 
       <div>
