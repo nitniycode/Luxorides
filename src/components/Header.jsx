@@ -116,9 +116,9 @@ export default function Header() {
                         More<RiArrowDownSFill className=' text-2xl'/>
 
                         <div className='hidden group-hover:block w-[130px] h-[140px] top-[100%] absolute bg-[#073b4c] text-center'>
-                            <li className={`mt-4 text-[#e6d9af] border-b-transparent hover:text-[#b1a374] ${matchRoute('')}
+                            <li className={`mt-4 text-[#e6d9af] border-b-transparent hover:text-[#b1a374] ${matchRoute('/contact')}
                             `}
-                            onClick={()=>navigate('')}
+                            onClick={()=>navigate('/contact')}
                             >
                                 Contact Us
                             </li>

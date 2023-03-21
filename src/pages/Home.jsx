@@ -42,7 +42,7 @@ export default function Home() {
     <section>
       <div className='w-full h-[700px] relative'>
         <div style={{backgroundImage: `url(${slides[Currentstate].url})`}}
-        className='w-full h-full bg-center bg-cover duration-100'></div>
+        className='w-full h-full bg-center bg-cover duration-300'></div>
       </div>
 
       <div className='absolute top-[50%] translate-y-[-50%] left-5 p-4 text-white bg-transparents cursor-pointer'>

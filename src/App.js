@@ -22,6 +22,7 @@ import Decoration from "./pages/Decoration";
 import Mercedes from "./pages/Mercedes";
 import About from "./pages/About";
 import Corporate from "./pages/Corporate";
+import Contact from "./pages/Contact";
 
 
 
@@ -53,6 +54,7 @@ function App() {
           <Route path="/decoration" element={<Decoration />} />
           <Route path="/mercedes" element={<Mercedes />} />
           <Route path="/corporate" element={<Corporate />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
     </>
