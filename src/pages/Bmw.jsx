@@ -1,253 +1,130 @@
-import React, { useState } from 'react'
-import { Link, useLocation, useNavigate } from 'react-router-dom'
+import React from 'react'
+import { useLocation, useNavigate } from 'react-router-dom'
+import {ImWhatsapp} from 'react-icons/im'
 import {ImFacebook} from 'react-icons/im'
-import {BsInstagram, BsYoutube, BsPinterest, BsTwitter, BsChevronLeft, BsChevronRight } from 'react-icons/bs'
+import {BsInstagram, BsYoutube, BsPinterest, BsTwitter} from 'react-icons/bs'
 
+export default function Bmw() {
 
-
-export default function Home() {
-
-  const location = useLocation()
+    const location = useLocation()
     const navigate = useNavigate()
-
+  
     function matchRoute(route){
         if(route===location.pathname){
             return true
         }
     }
-
-    const slides=[
-      {url:'./home.jpg'},
-      {url:'./merc.jpg'},
-      {url:'./cargirl.jpg'},
-      {url:'./sign3.jpg'},
-      {url:'./wedcar.jpg'},
-    ]
-    const [Currentstate, setCurrentState]= useState(0)
-
-    const prevslide=()=>{
-      const isfirstdlide = Currentstate===0;
-      const newindex = isfirstdlide ? slides.length-1: Currentstate-1;
-      setCurrentState(newindex);
-      
-    };
-      const nextslide=()=>{
-        const isfirstdlide = Currentstate=== slides.length-1;
-        const newindex= isfirstdlide ? 0: Currentstate+1;
-        setCurrentState(newindex)
-      };
-
-
   return (
     <section>
-      <div className='w-full h-[700px] relative'>
-        <div style={{backgroundImage: `url(${slides[Currentstate].url})`}}
-        className='w-full h-full bg-center bg-cover duration-300'></div>
-      </div>
+        <div>
+            <img src="./bmw.jpg" alt="" className='relative'/>
 
-      <div className='absolute top-[50%] translate-y-[-50%] left-5 p-4 text-white bg-transparents cursor-pointer'>
-        <BsChevronLeft onClick={prevslide} size={40}/>
-      </div>
-
-      <div className='absolute top-[50%] translate-y-[-50%] right-5 p-4 text-white bg-transparent cursor-pointer'>
-        <BsChevronRight onClick={nextslide} size={40}/>
-      </div>
-
-      <div>
-        <img src="https://www.luxorides.com/assets/images/1970468.webp" 
-              alt="clrimg" 
-              className='relative'
-        />
-        <div className='absolute top-[140%] left-72 text-center'>
-          <h2 className='text-7xl text-black font-semibold'>Luxury<span className='font-thin'> Car on Rent</span></h2>
-          <h2 className='text-6xl text-black font-thin mt-3'>Luxury is Contagious! Choose <span className='font-semibold'>Wisely</span></h2>
-
-          <div className='flex space-x-7 justify-center mt-8'>
-            <button className={`m-4 py-3 px-14 text-lg flex items-center text-white bg-[#b1a374] rounded-full hover:bg-[#6c613c] hover:shadow-2xl ${matchRoute('/ecategories')}
-            `}
-            onClick={()=>navigate('/ecategories')}
-            >
-              Explore Cars by Category
-            </button>
-            <button className={`m-4 py-3 px-14 text-lg flex items-center text-white bg-[#b1a374] rounded-full hover:bg-[#6c613c] hover:shadow-2xl ${matchRoute('/ebrands')}
-            `}
-            onClick={()=>navigate('/ebrands')}
-            >
-              Explore cars by Brands
-            </button>
-          </div>
-
-          <div className='flex justify-between'>
-            <button className={`m-4 py-3 px-14 text-lg flex items-center border-2 border-[#b1a374] text-[#b1a374] bg-white rounded-full hover:bg-[#b1a374] hover:text-white hover:shadow-2xl ${matchRoute('/oneview')}
-            `}
-            onClick={()=>navigate('/oneview')}
-            >
-              Oneview of the Fleet
-            </button>
-            <button className={`m-4 py-3 px-14 text-lg flex items-center border-2 border-[#b1a374] text-[#b1a374] bg-white rounded-full hover:bg-[#b1a374] hover:text-white hover:shadow-2xl ${matchRoute('/esevices')}
-            `}
-            onClick={()=>navigate('/eservices')}
-            >
-              Explore by Services
-            </button>
-
-          </div>
+            <div className='absolute top-[40%] right-[5%]'>
+                <h2 className='text-7xl font-semibold text-white'>Rent a BMW</h2>
+                <p className='text-2xl text-white text-center mt-20'>Luxury beyonds Beliefs</p>
+            </div>
         </div>
-      </div>
+
+        <div>
+          <h2 className='text-7xl font-semibold text-center mt-16'>Sedans <span className='font-light'>from</span> BMW</h2>
 
 
-      <div className='bg-[#ccf5f4] pb-24'>
-        <h2 className='text-5xl font-light text-center pt-24'>We're <span className='font-semibold'>Covid-19 Ready</span></h2>
-        <p className='text-2xl font-thin mt-10 text-center'>
-          In an attempt to serve you even better through this pandemic,<br/>
-          We are taking frequent precautionary actions to keep you <span className='font-semibold'>Safe and Sanitised</span>.<br/>
-          Luxorides is a Covid-19 ready car rental service in Delhi NCR.
-        </p>
+          <div className='flex justify-center space-x-16 my-16'>
+            <img src="https://luxorides.com/assets/images/bmw-3-series-rs20000-luxorides-luxury-car-rentals-for-wedding-corporate-personal-delhi-noida-gurgaon-ghaziabad-3-1016x572.webp" alt="" className='w-[550px] shadow-2xl'/>
 
-        <div className='flex justify-center space-x-6 mt-24'>
-          <div className='text-center shadow-2xl'>
-            <img src="https://www.luxorides.com/assets/images/luxorides-covid-precautions-9.webp"
-            alt='covid' className={`w-[350px] cursor-pointer ${matchRoute('/covid')}`} onClick={()=>navigate('/covid')}/>
-            <h2 className='text-lg font-semibold mt-5 '>Regularly Cleaned and Sanitised</h2>
-            <p className='text-lg text-gray-600 mt-3 pb-8'>All our vehicles are regularly cleaned<br/> and sanitised for your safer and<br/> hygienic ride.</p>
-          </div>
-          <div className='text-center shadow-2xl'>
-            <img src="https://www.luxorides.com/assets/images/luxorides-covid-precautions-10.webp"
-            alt='covid' className={`w-[350px] cursor-pointer ${matchRoute('/covid')}`} onClick={()=>navigate('/covid')}/>
-            <h2 className='text-lg font-semibold mt-5'>Minimal / No Touch Policy</h2>
-            <p className='text-lg text-gray-600 mt-3 pb-8'>We follow a minimum / no touch<br/> policy to ensure that you are safe<br/> throughout your rental.</p>
-          </div>
-          <div className='text-center shadow-2xl'>
-            <img src="https://www.luxorides.com/assets/images/6vh99bihqa-1.webp"
-            alt='covid' className={`w-[350px] cursor-pointer ${matchRoute('/covid')}`} onClick={()=>navigate('/covid')}/>
-            <h2 className='text-lg font-semibold mt-5'>Precautionary Tests</h2>
-            <p className='text-lg text-gray-600 mt-3 pb-8'>Our staff undergoes a regular<br/> precautionary thermal screening for<br/> better safety.</p>
-          </div>
-        </div>
-      </div>
+            <div className='text-center'>
+              <h2 className='text-3xl font-semibold my-8'>
+                Rent BMW 3 Series Sedans
+              </h2>
+              <p className='text-lg text-slate-500'>
+                Barely on the road and the all-new BMW 3 Series is already leaving<br/> everything behind it, including conventions and expectations. It stands<br/> for the dawning of a new era. Propelling the ultimate sports sedan are<br/> even more powerful and efficient engines.
+              </p>
 
-      <div className='pb-20'>
-        <h2 className='text-6xl font-thin text-center mt-14'>What we Offer</h2>
-        <p className='text-2xl font-light mt-5 text-center'>
-          We cater to all your luxury car rental needs, Be it for any Service or Brand.<br/>
-          Explore what best suits you.
-        </p>
-
-        <div className='flex justify-center space-x-4 mt-16 text-center'>
-          <div className='shadow-2xl px-4 py-4 rounded-3xl'>
-            <div className='hover:shadow-2xl rounded-2xl pb-2'>
-              <Link to="/weddingcar">
-              <img src="https://luxorides.com/assets/images/iqfm79m4en.webp" 
-              alt="wedpic" className='w-[260px] rounded-3xl cursor-pointer'/>
-              </Link>
-              <h2 className='font-light text-lg py-8'>Cars for <span className='font-semibold'>Wedding</span></h2>
+              <div className='flex mt-8'>
+              <button className='text-green-700 text-lg font-semibold bg-white border-green-700 border-2 rounded-full px-12 py-3 flex items-center hover:bg-green-400 hover:text-white hover:border-green-400 shadow-2xl'>
+                    <ImWhatsapp className='mr-1 text-2xl'/>
+                    ₹20,000/-
+              </button>
+              <button className='text-black text-lg m-auto font-semibold bg-white border-black border-2 rounded-full px-10 py-2 flex items-center hover:black hover:text-white hover:bg-black shadow-2xl'>
+                    View car
+              </button>
+              </div>
+              
             </div>
           </div>
-          
-          <div className='shadow-2xl px-4 py-4 rounded-3xl'>
-            <div className='hover:shadow-2xl rounded-2xl pb-2'>
-              <Link to="/corporate">
-              <img src="https://luxorides.com/assets/images/siqkynexsm-copy-1.webp" 
-              alt="corporatepic" className='w-[260px] rounded-3xl'/>
-              </Link>
-              <h2 className='font-light text-lg py-8'>Cars for <span className='font-semibold'>Corporate</span></h2>
+
+        
+
+          <div className='flex justify-center space-x-16 py-16'>
+            <div className='text-center'>
+              <h2 className='text-3xl font-semibold my-8'>
+                Rent BMW 5 Series Sedans
+              </h2>
+              <p className='text-lg text-slate-500'>
+                The BMW 5 Series is the embodiment of the modern business sedan.<br/> Due to its dynamic and elegant appearance, it convincingly meets the<br/> expectations placed today on a vehicle of its class: aesthetic athleticism<br/> and driving pleasure with state-of-the-art technology.
+              </p>
+
+              <div className='flex mt-8'>
+              <button className='text-green-700 text-lg font-semibold bg-white border-green-700 border-2 rounded-full px-12 py-3 flex items-center hover:bg-green-400 hover:text-white hover:border-green-400 shadow-2xl'>
+                    <ImWhatsapp className='mr-1 text-2xl'/>
+                    ₹31,000/-
+              </button>
+              <button className='text-black text-lg m-auto font-semibold bg-white border-black border-2 rounded-full px-10 py-2 flex items-center hover:black hover:text-white hover:bg-black shadow-2xl'>
+                    View car
+              </button>
+              </div>
+              
             </div>
-          </div>
-          
-          <div className='shadow-2xl px-4 py-4 rounded-3xl'>
-            <div className='hover:shadow-2xl rounded-2xl pb-2'>
-              <Link to="/travelclass">
-              <img src="https://luxorides.com/assets/images/6c7tmrpzwd.webp" 
-              alt="personalpic" className='w-[260px] rounded-3xl'/>
-              </Link>
-              <h2 className='font-light text-lg py-8'><span className='font-semibold'>Personal</span> travel</h2>
-            </div>
-          </div>
-          
-          <div className='shadow-2xl px-4 py-4 rounded-3xl'>
-            <button className={`hover:shadow-2xl rounded-2xl pb-2 ${matchRoute('/esevices')}
-            `}
-            onClick={()=>navigate('/eservices')}
-            >
-              <img src="https://luxorides.com/assets/images/dqtratkvyb.webp" 
-              alt="explorepic" className='w-[260px] rounded-3xl'/>
-              <h2 className='font-semibold text-lg py-8'>Explore all Services</h2>
-            </button>
+
+            <img src="https://luxorides.com/assets/images/bmw-5-series-luxorides-luxury-car-rentals-for-wedding-corporate-personal-delhi-noida-gurgaon-ghaziabad.webp" alt="" className='w-[500px] shadow-2xl'/>
           </div>
         </div>
 
-        <div className='flex justify-center mt-28 text-center space-x-7'>
-          <button className={`shadow-2xl  ${matchRoute('/audi')}`} onClick={()=>navigate('/audi')}>
-            <img src="https://luxorides.com/assets/images/audi-logo-for-luxorides-1x1.webp" 
-            alt="audiimg" className='w-[250px]'/>
-            <h2 className='font-light my-3'>Rent an <span className='font-semibold'>Audi</span></h2>
-          </button>
+        <div className='bg-gradient-to-r from-cyan-700 to-blue-300 py-16'>
+          <div className='mt-12'> 
+            <img src="https://luxorides.com/assets/images/bmw-7-series-rs35000-luxorides-luxury-car-rentals-for-wedding-corporate-personal-delhi-noida-gurgaon-ghaziabad.webp" alt="" className='w-[550px] mx-auto shadow-2xl'/>
 
-          <button className={`shadow-2xl  ${matchRoute('/bmw')}`} onClick={()=>navigate('/bmw')}>
-            <img src="https://luxorides.com/assets/images/bmw-logo-for-luxorides-512px-1x1.webp" 
-            alt="bmwimg" className='w-[250px]'/>
-            <h2 className='font-light my-3'>Rent an <span className='font-semibold'>BMW</span></h2>
-          </button>
-
-          <button className={`shadow-2xl  ${matchRoute('/mercedes')}`} onClick={()=>navigate('/mercedes')}>
-            <img src="https://luxorides.com/assets/images/mercedes-logo-for-luxorides-512px-1x1.webp" 
-            alt="benzimg" className='w-[250px]'/>
-            <h2 className='font-light my-3'>Rent an <span className='font-semibold'>Mercedes</span></h2>
-          </button>
-
-          <button className={`shadow-2xl ${matchRoute('/ebrands')}
-          `}
-          onClick={()=>navigate('/ebrands')}
-          >
-            <img src="https://luxorides.com/assets/images/luxorides-square-logo-only-solid-whitepng-400ppi-6-500x500.webp" 
-            alt="luxologo" className='w-[250px]'/>
-            <h2 className='font-semibold my-3'>Explore all Brands</h2>
-          </button>
-        </div>
-
-        <h2 className='text-6xl font-extralight text-center mt-44'>Why Choose Us</h2>
-        <p className='text-2xl mt-7 text-center text-gray-500'>We know making a choice is tough but We will give you enough reasons to keep choosing us!</p>
-
-
-        <div className='flex justify-center text-center mt-10 space-x-10'>
-          <div>
-            <h2 className='text-6xl text-gray-400'>01.</h2>
-            <h2 className='text-lg mt-3'>We are <span className='font-semibold'>trustworthy</span></h2>
-            <p className='text-lg text-gray-500 font-light mt-2'>Luxorides is trusted by countless corporates<br/> and Individuals across the NCR as their<br/> preferred luxury ride partner.</p>
-          </div>
-
-          <div>
-            <h2 className='text-6xl text-gray-400'>02.</h2>
-            <h2 className='text-lg mt-3'>We are <span className='font-semibold'>Always Improving</span></h2>
-            <p className='text-lg text-gray-500 font-light mt-2'>We take our customers seriously, We<br/> understand the your concerns and that's why<br/> we leave no room for any negative surprise.</p>
-          </div>
-
-          <div>
-            <h2 className='text-6xl text-gray-400'>03.</h2>
-            <h2 className='text-lg mt-3'>We are <span className='font-semibold'>Passionate</span></h2>
-            <p className='text-lg text-gray-500 font-light mt-2'>We love what we do and that encourages us<br/> to keep things loving. </p>
-          </div>
-        </div>
-      </div>
-
-      <div className='bg-gradient-to-r from-[#ffffff] to-[#cebfaf] py-14'>
-        <div className='justify-center flex space-x-52'>
-          <div>
-            <p className=' text-[#cc2952] text-2xl font-thin'>
-              At Luxorides, Your Safety is our Priority, We take utmost care for your safe ride. 
+            <h2 className='text-3xl font-semibold text-center my-8'>Rent BMW 7 Series Sedans</h2>
+            <p className='text-lg font-extralight text-center'>
+                With new exquisite design details, the finest materials and powerful<br/> innovations, the new BMW 7 Series, delivers a new echelon of pleasure.<br/> Imagined, designed and crafted for individuals who value every moment,<br/> discover an experience inspired to drive the world.
             </p>
-            <h2 className=' mt-4 text-5xl font-semibold text-[#cc2952]'>Safety at LUXORIDE</h2>
+            <button className='text-green-700 text-lg mx-auto mt-12 font-semibold bg-white border-green-700 border-2 rounded-full px-12 py-3 flex items-center hover:bg-green-400 hover:text-white hover:border-green-400 hover:shadow-2xl'>
+                    <ImWhatsapp className='mr-1 text-2xl'/>
+                    ₹ 51,000/-
+            </button>
           </div>
-          <button className={`m-5 py-3 px-20 text-lg text-[#cc2952] border-2 border-[#cc2952] bg-transparent rounded-full hover:shadow-2xl hover:bg-[#cc2952] hover:text-white ${matchRoute('/support')}
-          `}
-          onClick={()=>navigate('/support')}
-          >
-            Safety
-          </button>
         </div>
-      </div>
 
-      <div className=' mt-16  text-center'>
+        <h2 className='text-7xl font-semibold text-center mt-20'>
+            About BMW
+        </h2>
+        <p className='text-gray-500 text-2xl font-thin text-center mt-10'>
+            BMW is a german Luxury car manufacturing company. It was actually founded as a<br/> 
+            manufacturer of aircraft engines. A BMW is a perfect blend of elegance, performance,<br/> 
+            and technology. Besides being the best-known German car manufacturers, it is more<br/> 
+            of a status symbol for the elite class. The “Ultimate Driving Machine”, BMW is one such<br/> 
+            luxury car that stands out because of its sporty look. Along with incredible power and,<br/> performance, it gives you an amazing travel experience.
+        </p>
+
+        <h2 className='text-6xl text-center mt-20 font-semibold'>Renting a BMW</h2>
+        <p className=' text-2xl font-thin text-center mt-10'>
+            Believe in Luxorides for “Haute Monde” Experience<br/>
+          <br/>
+            Luxorides, being one of the finest transportation companies in New Delhi for years,<br/> 
+            vows to cater to you with the best and seamless transfer experience in your very own<br/> 
+            luxurious BMW. Be it a wedding, corporate or personal need, we let you hire the<br/> 
+            foremost luxury ride. Being backed up with multiple car owners and vendors, you can<br/> 
+            hire the BMW in different variants of your choice. So, if you want to light up your<br/> 
+            occasion, we have a stupendous fleet of BMW Sedans. Let Luxorides be your prime<br/> 
+            partner and be in the safest hands for all your transfer needs.<br/>
+          <br/>
+            We know it's tough to make a decision, but there are enough reasons to continue<br/> choosing Luxorides!<br/>
+          <br/>
+          Place an appointment with us and rent a BMW of your choice. Come, be a part of our<br/> growing community. Allow Luxorides to give you an experience of a lifetime!
+
+        </p>
+
+        <div className='bg-[#efefef] mt-16  text-center'>
               <p className='text-center  pt-20 text-5xl font-light'>
                   How it Works
               </p>
@@ -317,30 +194,6 @@ export default function Home() {
                   </p>
               </div>
           </div>
-      </div>
-
-      <div className='bg-[#ccf5f4] pb-16'>
-        <div className='flex justify-center pt-32 space-x-16'>
-          <div>
-            <img src="./cargirl1.jpg" alt="windowgirl" 
-            className={`w-[750px] cursor-pointer rounded-3xl ${matchRoute('/travelclass')}
-            `}
-            onClick={()=>navigate('/travelclass')}
-            />
-          </div>
-          <div className='text-center'>
-            <h2 className='text-6xl'>RIDE</h2>
-            <h2 className='text-7xl font-semibold'>ELITE</h2>
-            <p className='text-3xl font-light mt-5'>Luxorides is the finest<br/> luxury car rental service in<br/> Delhi NCR, Jaipur, Agra<br/> and Lucknow.<br/>
-            We offer you a seamless<br/> chauffeur driven ride<br/> experience to light up<br/> your event. </p>
-          </div>
-        </div>
-        <p className={`text-2xl text-center mt-12 italic text-gray-400 cursor-pointer hover:text-black ${matchRoute('/travelclass')}
-        `}
-        onClick={()=>navigate('/travelclass')}
-        >
-          Luxorides Luxury Car Rentals for Corporate Delhi Noida Gurgaon Ghaziabad
-        </p>
       </div>
 
       <div className='bg-[#b2ccd2] h-auto py-24 '>
@@ -534,7 +387,6 @@ export default function Home() {
 
       </div>
 
-      
     </section>
   )
 }
