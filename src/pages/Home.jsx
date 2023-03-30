@@ -53,12 +53,12 @@ export default function Home() {
         <BsChevronRight onClick={nextslide} size={40}/>
       </div>
 
-      <div>
+      <div className=''>
         <img src="https://www.luxorides.com/assets/images/1970468.webp" 
               alt="clrimg" 
               className='relative'
         />
-        <div className='absolute top-[140%] left-72 text-center'>
+        <div className='absolute top-[140%] left-[20%] text-center '>
           <h2 className='text-7xl text-black font-semibold'>Luxury<span className='font-thin'> Car on Rent</span></h2>
           <h2 className='text-6xl text-black font-thin mt-3'>Luxury is Contagious! Choose <span className='font-semibold'>Wisely</span></h2>
 
@@ -105,7 +105,7 @@ export default function Home() {
         </p>
 
         <div className='flex justify-center space-x-6 mt-24'>
-          <div className='text-center shadow-2xl'>
+          <div className='text-center shadow-2xl md:h-full '>
             <img src="https://www.luxorides.com/assets/images/luxorides-covid-precautions-9.webp"
             alt='covid' className={`w-[350px] cursor-pointer ${matchRoute('/covid')}`} onClick={()=>navigate('/covid')}/>
             <h2 className='text-lg font-semibold mt-5 '>Regularly Cleaned and Sanitised</h2>
@@ -238,9 +238,9 @@ export default function Home() {
             </p>
             <h2 className=' mt-4 text-5xl font-semibold text-[#cc2952]'>Safety at LUXORIDE</h2>
           </div>
-          <button className={`m-5 py-3 px-20 text-lg text-[#cc2952] border-2 border-[#cc2952] bg-transparent rounded-full hover:shadow-2xl hover:bg-[#cc2952] hover:text-white ${matchRoute('/support')}
+          <button className={`m-5 py-3 px-20 text-lg text-[#cc2952] border-2 border-[#cc2952] bg-transparent rounded-full hover:shadow-2xl hover:bg-[#cc2952] hover:text-white ${matchRoute('/safety')}
           `}
-          onClick={()=>navigate('/support')}
+          onClick={()=>navigate('/safety')}
           >
             Safety
           </button>

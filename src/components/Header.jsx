@@ -19,7 +19,7 @@ export default function Header() {
 
     
   return (
-    <div className='shadow-sm sticky top-0 z-50 bg-[#073b4c] '>
+    <div className='shadow-sm sticky top-0 z-50 bg-[#073b4c] sm:w-full overflow-hidden '>
         <header className='flex items-center space-x-4'>
             <div>
                 <img src="https://luxorides.com/assets/images/luxorides-square-logo-only-solid-whitepng-400ppi-13-500x500.webp" 
@@ -29,7 +29,7 @@ export default function Header() {
                 />
             </div>
             <div>
-                <ul className='flex space-x-6 ml-72'>
+                <ul className='flex space-x-6 ml-72 w-fit'>
                     <li className={`cursor-pointer py-3 text-[#e6d9af] text-md font-semibold border-b-transparent hover:text-[#b1a374] ${matchRoute('/')}
                       `} 
                       onClick={()=>navigate('/')}
@@ -114,6 +114,7 @@ export default function Header() {
 
                     <li className={`group relative cursor-pointer py-3 flex text-[#e6d9af] text-md font-semibold border-b-transparent hover:text-[#b1a374]`}>
                         More<RiArrowDownSFill className=' text-2xl'/>
+
 
                         <div className='hidden group-hover:block w-[130px] h-[140px] top-[100%] absolute bg-[#073b4c] text-center'>
                             <li className={`mt-4 text-[#e6d9af] border-b-transparent hover:text-[#b1a374] ${matchRoute('/contact')}
