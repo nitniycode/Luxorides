@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import {FcGoogle} from 'react-icons/fc'
 import {ImFacebook} from 'react-icons/im'
 import {BsInstagram, BsYoutube, BsPinterest, BsTwitter} from 'react-icons/bs'
+import {AiFillEyeInvisible, AiFillEye} from 'react-icons/ai'
 
 export default function Signin() {
+
+  const [showPassword,setShowPassword] = useState(false)
+
   return (
     <section>
       <div>
@@ -24,9 +28,24 @@ export default function Signin() {
                       placeholder='Email Address'
                     />
                     <input 
-                        className='w-full h-9 border-2 border-gray-400 px-10 py-5 mt-6'
+                        type={showPassword?'text':'password'}
+                        className='w-full h-9 border-2 border-gray-400 px-10 py-5 mt-6 relative'
                         placeholder='Password'
                     />
+
+                  {showPassword?(
+                    <AiFillEye
+                      className=' cursor-pointer absolute right-48 top-[235px] text-[18px]'
+                      onClick={()=>setShowPassword(false)}
+                    />
+                  ):(
+                    <AiFillEyeInvisible 
+                      className='cursor-pointer absolute right-48 top-[235px] text-[18px]'
+                      onClick={()=>setShowPassword(true)}  
+                    />
+                  )}   
+
+
                     <div className='flex justify-between mt-2'>
                       <p className='font-thin text-white'>Don't Have An Account?<Link to='/sign-up' className='font-semibold text-red-500'> Create one</Link></p>
                       <Link to='/forgotpassword' className='font-semibold text-blue-500'>Forgot Password?</Link>
