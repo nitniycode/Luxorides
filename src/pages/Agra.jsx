@@ -270,64 +270,6 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='bg-black h-96 text-center'>
-        <div className='flex justify-center space-x-48 py-14'>
-            <div>
-              <img src="https://luxorides.com/assets/images/luxorides-square-logo-only-solid-whitepng-400ppi-9-500x500.webp" 
-                    alt="luxorides logo"
-                    className='h-28'
-             />
-            </div>
-            <div>
-              <h2 className='text-[#82786e] font-medium text-lg'>
-                  Locations
-              </h2><br/>
-              <button className='text-gray-400 hover:text-gray-600'>Delhi</button><br />
-              <button className='text-gray-400 hover:text-gray-600'>Lucknow</button><br />
-              <button className='text-gray-400 hover:text-gray-600'>Agra</button><br />
-              <button className='text-gray-400 hover:text-gray-600'>Jaipur</button><br />
-            </div>
-            <div>
-              <h2 className='text-[#82786e] font-medium text-lg'>
-                  Delhi NCR
-              </h2><br/>
-              <button className='text-gray-400 hover:text-gray-600'>Gurgaon</button><br />
-              <button className='text-gray-400 hover:text-gray-600'>Faridabad</button><br />
-              <button className='text-gray-400 hover:text-gray-600'>Ghaziabad</button><br />
-              <button className='text-gray-400 hover:text-gray-600'>Noida</button><br />
-            </div>
-            <div>
-              <h2 className='text-[#82786e] font-medium text-lg'>
-                  Contacts
-              </h2><br/>
-              <button className='text-gray-400 hover:text-gray-600'>contact@luxorides.in</button><br />
-              <button className='text-gray-400 hover:text-gray-600 py-5 font-extralight'>+91 9119004208</button><br />
-            </div>
-            
-        </div>
-        <div className='bg-gray-600 h-[1px] mx-44'></div>
-
-        <div className='flex justify-center space-x-96'>
-          <div className='text-left mt-5'>
-            <h2 className='text-white'>Website developed by <button className='text-gray-400 hover:text-gray-600'>Coding Scholar</button></h2>
-
-            <h2 className='text-white'>A Unit of <button className='text-[#b1a374] hover:text-[#d8ccaa]'>Umbrella Room Ventures India Pvt Ltd.</button> formally starsudt ventures</h2>
-
-            <h2 className='text-white'>@ Copyright 2021 - All Rights Reserved</h2>
-
-            
-          </div>
-          <div className='space-x-7 mt-5'>
-            <button><ImFacebook className='text-gray-400 hover:text-blue-500 text-2xl'/></button>
-            <button><BsTwitter className='text-gray-400 hover:text-blue-500 text-2xl'/></button>
-            <button><BsInstagram className='text-gray-400 hover:text-pink-400 text-2xl'/></button>
-            <button><BsYoutube className='text-gray-400 hover:text-red-700 text-2xl'/></button>
-            <button><BsPinterest className='text-gray-400 hover:text-red-700 text-2xl'/></button>            
-          </div>
-        </div>
-
-
-      </div>
     </section>
   )
 }

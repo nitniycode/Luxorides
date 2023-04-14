@@ -25,6 +25,7 @@ import Corporate from "./pages/Corporate";
 import Contact from "./pages/Contact";
 import Bmw from "./pages/Bmw";
 import Safety from "./pages/Safety";
+import Footer from "./components/Footer";
 
 
 
@@ -60,6 +61,7 @@ function App() {
           <Route path="/bmw" element={<Bmw />} />
           <Route path="/safety" element={<Safety />} />
         </Routes>
+        <Footer />
       </Router>
     </>
 

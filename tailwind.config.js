@@ -5,6 +5,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens:{
+        'xm': '200px',
+        'pm': '500px',
+      },
       backgroundImage: {
         'hero-pattern': "url('/img/hero-pattern.svg')",
         'footer-texture': "url('/img/footer-texture.png')",

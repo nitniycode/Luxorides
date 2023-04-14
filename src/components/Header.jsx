@@ -19,7 +19,7 @@ export default function Header() {
 
     
   return (
-    <div className='w-full shadow-sm sticky top-0 z-50 bg-[#073b4c] overflow-hidden'>
+    <div className='w-full shadow-sm sticky top-0 z-50 bg-[#073b4c]'>
         <header className='flex items-center space-x-4 lg:mr-[1px] lg:w-[10]'>
             <div className=''>
                 <img src="https://luxorides.com/assets/images/luxorides-square-logo-only-solid-whitepng-400ppi-13-500x500.webp" 
@@ -29,7 +29,7 @@ export default function Header() {
                 />
             </div>
             <div>
-                <ul className='flex space-x-6 ml-72 w-fit'>
+                <ul className='flex space-x-6 ml-72 w-fit lg:flex xm:hidden xl:ml-[200px] 2xl:ml-[330px] lg:ml-[100px] '>
                     <li className={`cursor-pointer py-3 text-[#e6d9af] text-md font-semibold border-b-transparent hover:text-[#b1a374] ${matchRoute('/')}
                       `} 
                       onClick={()=>navigate('/')}
@@ -133,7 +133,7 @@ export default function Header() {
                     </li>
                 </ul>
             </div>
-            <div className='flex space-x-5 lg:flex-none lg:justify-end'>
+            <div className='flex space-x-5 lg:flex-none lg:flex xm:hidden'>
                 <div>
                     <button className='text-white border-white border-2 font-semibold bg-[#073b4c] rounded-full px-8 py-2 flex items-center hover:bg-white hover:text-black'>
                         <FiPhone className='mr-2' />
